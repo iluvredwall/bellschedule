@@ -2,3 +2,7 @@
 	path = gh-pages
 	url = ./
 	branch = gh-pages
+[submodule "test"]
+	path = test
+	url = ./
+	branch = gh-pages
