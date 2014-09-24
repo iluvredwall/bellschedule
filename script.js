@@ -369,7 +369,7 @@ function setDayBeginning(date) {
 function getDateFromString(string, date) {
 	var hour = string.substring(0,string.indexOf(":"));
 	var min = string.substring(string.indexOf(":")+1);
-	if(hour<7) hour = parseInt(hour,10)+12; //assumes hours less than seven are PM and hours 7 or greater are AM
+	if(hour<8) hour = parseInt(hour,10)+12; //assumes hours less than seven are PM and hours 7 or greater are AM
 	return new Date(date.getFullYear(),date.getMonth(),date.getDate(),hour,min);
 }
 
